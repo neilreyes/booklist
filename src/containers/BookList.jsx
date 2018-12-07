@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import { ListGroupItem } from "react-bootstrap";
+
 class BookList extends Component{
     render(){
         const books = this.props.books;
@@ -8,7 +10,7 @@ class BookList extends Component{
         return(
             books.map( book => {
                 return (
-                    <li className="list-item-group" key={book.title}>{book.title}</li>
+                    <ListGroupItem key={book.title}>{book.title}</ListGroupItem>
                 )
             })
         );

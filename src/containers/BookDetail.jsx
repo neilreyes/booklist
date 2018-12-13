@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class BookDetail extends Component {
+
     render(){
-        const book = this.props.activeBook;
+
+        if( !this.props.activeBook ){
+            return(<h2>Select a book to get started.</h2>)
+        }
+
         return (
             <div>
-                {book.title}
+                <h2>{this.props.activeBook.title}</h2>
+                <span>{this.props.activeBook.pages} pages</span>
             </div>
         )
     }

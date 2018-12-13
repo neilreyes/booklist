@@ -1,4 +1,4 @@
-function bookListReducer(){
+export default function bookListReducer(){
     return [
         { title: "JavaScript: The Good Parts",},
         { title: "Goodbye, Things: The New Japanese Minimalism",},
@@ -8,5 +8,3 @@ function bookListReducer(){
         { title: "Blink: The Power of Thinking Without Thinking", },
     ];
 }
-
-export default bookListReducer;

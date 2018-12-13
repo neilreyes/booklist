@@ -3,6 +3,7 @@ import { Row, Col, ListGroup } from "react-bootstrap";
 import '../App.css';
 // Import components
 import BookList from "../containers/BookList";
+import BookDetail from "../containers/BookDetail";
 
 const App = () => {
     return (
@@ -12,6 +13,9 @@ const App = () => {
                     <ListGroup>
                         <BookList />
                     </ListGroup>
+                </Col>
+                <Col sm={8}>
+                    <BookDetail />
                 </Col>
             </Row>
         </div>

@@ -24,6 +24,7 @@ class BookList extends Component{
 }
 
 function mapStateToProps(state){
+    console.log('mapStateToProps ', state)
     return {
         books : state.books
     }
